@@ -37,13 +37,13 @@ module.exports = function(grunt) {
         }
     });
 
-    grunt.loadNpmTasks('grunt-latex')
-    grunt.loadNpmTasks('grunt-contrib-watch')
-    grunt.loadNpmTasks('grunt-shell')
-    grunt.loadNpmTasks('grunt-contrib-clean')
+    grunt.loadNpmTasks('grunt-latex');
+    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-shell');
+    grunt.loadNpmTasks('grunt-contrib-clean');
 
-    grunt.registerTask('watch', ['watch'])
-    grunt.registerTask('default', ['latex', 'shell:bibTex', 'latex', 'latex'])
+    // grunt.registerTask('watch', ['watch:app'])
+    grunt.registerTask('default', ['latex', 'shell:bibTex', 'latex', 'latex']);
 
 }
 
